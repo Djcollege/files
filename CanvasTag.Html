@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<canvas id="CircleCanvas" width="200" height="100"
+style="border:1px solid #ff6347;"></canvas>
+
+<script>
+var canvas = document.getElementById("CircleCanvas");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+function movecircle()
+{ var c = document.getElementById('CircleCanvas');
+var ctx = c.getContext('2d');
+ctx.beginPath();
+ctx.arc(115,95,50,0*Math.PI,1.5*Math.PI);
+ctx.stroke(); }
+function movecirclehere()
+{ var c = document.getElementById('CircleCanvas');
+var ctx = c.getContext('2d');
+ctx.beginPath();
+ctx.arc(135,115,50,0*Math.PI,1.5*Math.PI);
+ctx.stroke(); }
+var movetimer;
+function movecircle() {
+
+
+.setInterval(movecircle(), 250)
+.setInterval(movecirclehere(), 500)
+</script> 
+
+</body>
+</html>
