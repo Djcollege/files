@@ -24,10 +24,13 @@ ctx.arc(135,115,50,0*Math.PI,1.5*Math.PI);
 ctx.stroke(); }
 var movetimer;
 function movecircle() {
+  movetimer = setInterval(movecircle(), 250);
+}
+var movetimertwo() {
+  function movecirclehere() {
+    movetimertwo = setInterval(movecirclehere(), 500);
+  }
 
-
-.setInterval(movecircle(), 250)
-.setInterval(movecirclehere(), 500)
 </script> 
 
 </body>
