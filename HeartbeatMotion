@@ -1,0 +1,18 @@
+<html>
+<head> Heart Beat And Motion </head>
+<body>
+<p> lets start the clock </p>
+ <script>
+ var myVar = setInterval(myTimer, 250);
+
+function clock() {
+  var c = new Date();
+  document.getElementById("time").innerHTML = d.toLocaleTimeString();
+}
+ </script>
+ <p id="time"></p>
+ <style>
+ </style>
+</body>
+ 
+ 
