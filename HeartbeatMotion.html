@@ -3,6 +3,32 @@
  <meta name="Ball" content="width=device-width, initial-scale=1"></head>
   <script>
  var myVar = setInterval(clock, 250);
+       var balls = setInterval(move, 250);
+function move(width, height, color, x, y, type) {
+
+    balls.type = type;
+    balls.width = width;
+    balls.height = height;
+    balls.speed = 1;
+    balls.angle = 0;
+    balls.moveAngle = 1;
+    balls.x = x;
+    balls.y = y;    
+    balls.update = function() {
+        ctx = myGameArea.context;
+        ctx.save();
+        ctx.translate(balls.x, balls.y);
+        ctx.rotate(balls.angle);
+        ctx.fillStyle = color;
+        ctx.fillRect(balls.width / -2, balls.height / -2, balls.width, balls.height);        
+        ctx.restore();    
+    }
+    balls.newPos = function() {
+        balls.angle += this.moveAngle * Math.PI / 180;
+        balls.x += this.speed * Math.sin(balls.angle);
+        balls.y -= this.speed * Math.cos(balls.angle);
+    }
+}
 
 function clock() {
   var c = new Date();
@@ -19,6 +45,7 @@ document.getElementById("bounce").innerHTML = balls;
   border-radius: 50%;
   display: inline-block;
 }
+
  </style>
 <body>
  
