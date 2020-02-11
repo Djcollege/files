@@ -1,19 +1,18 @@
 <html>
 <head> HeartBeat And Motion 
  <meta name="Ball" content="width=device-width, initial-scale=1"></head>
-<body>
-<p> lets start the clock </p>
- <script>
+  <script>
  var myVar = setInterval(clock, 250);
 
 function clock() {
   var c = new Date();
   document.getElementById("time").innerHTML = c.toLocaleTimeString();
 }
+   var balls = ["ball", "ball2", "ball3"];
+document.getElementById("bounce").innerHTML = balls;
  </script>
- <p id="time"></p>
- <style>
-  .ball {
+   <style>
+  .balls {
   height: 25px;
   width: 25px;
   background-color: #bbb;
@@ -21,6 +20,14 @@ function clock() {
   display: inline-block;
 }
  </style>
+<body>
+ 
+<p> lets start the clock </p>
+
+ <p id="time"></p>
+ <p id="bounce"></p>
+   <span class="balls"></span>
+ 
 </body>
 </html>
  
