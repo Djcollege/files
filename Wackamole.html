@@ -9,15 +9,21 @@
   {
   var m = document.getElementById("map")
   ctx = c.getContext("2d");
-  level();
-  
+  var n = new Mole();
+   n.draw()
+  }
+    
   function Mole()
   {
    this.img = new Image();
-   this.img.src = https://www.google.com/imgres?imgurl=https%3A%2F%2Ftr.rbxcdn.com%2Ffaa157de3b29d6bd9befeb8457825774%2F420%2F420%2FDecal%2FPng&imgrefurl=https%3A%2F%2Fwww.roblox.com%2Flibrary%2F172668713%2FDiglett-Front-Sprite-Shiny&tbnid=e005u7SvvsZJnM&vet=10CAsQxiAoAWoXChMIyODkx9rP5wIVAAAAAB0AAAAAEAs..i&docid=-e9pK8D_uiHrGM&w=420&h=420&itg=1&q=tiny%20mole%20animal%20pixel&safe=strict&ved=0CAsQxiAoAWoXChMIyODkx9rP5wIVAAAAAB0AAAAAEAs
-   this.x;
-   this.y;
+   this.img.src = https://tr.rbxcdn.com/faa157de3b29d6bd9befeb8457825774/420/420/Decal/Png
+   this.x=0;
+   this.y=0;
    }
+    Mole.prototype.draw = function()
+    {
+      ctx.drawImage(this.img, this.x, this.y, 20, 20)
+    }
   </script>
  </head>
  <body onload="load()">
