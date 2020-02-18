@@ -1,1 +1,23 @@
-<head
+<html>
+ <head>
+  </head>
+    <body>
+      <button onclick="output()">Click it</button>
+   <script>
+   function Vehicle()
+{
+  this.Name="Vehicle";
+}  
+     Vehicle.prototype.go = function ()
+{
+  document.getElementById("output").innerHTML+="The "+this.Name+" go.<br>";
+}
+
+Vehicle.prototype.sound = function ()
+{
+  document.getElementById("output").innerHTML+="I am a "+this.Name+" sound.<br>";
+}
+     
+   </script>
+  </body>
+</html>
