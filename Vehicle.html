@@ -1,9 +1,6 @@
 <html>
  <head>
-  </head>
-    <body>
-      <button onclick="output()">Click it</button>
-   <script>
+     <script>
    function Vehicle()
 {
   this.Name="Vehicle";
@@ -17,7 +14,20 @@ Vehicle.prototype.sound = function ()
 {
   document.getElementById("output").innerHTML+="I am a "+this.Name+" sound.<br>";
 }
+    
+  function T()
+      {
+       ship = new Vehicle();
+       ship.go();
+      }
      
    </script>
+  </head>
+    <body onload="T()">
+     <p id="output"></p>
+    
+      <button onclick="output()">Click it</button>
+
+ 
   </body>
 </html>
