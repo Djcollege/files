@@ -30,7 +30,7 @@ Vehicle.prototype.sound = function ()
       function Sub()
       { this.Name="sub";
       } 
-    Sub.prototype = Vehicle.prototype;
+    Sub.prototype = Object.create(Vehicle.prototype);
     Sub.prototype.constructor=Sub 
     Sub.prototype.sound = function () 
     {
