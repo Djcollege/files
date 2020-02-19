@@ -32,7 +32,10 @@ Vehicle.prototype.sound = function ()
       } 
     Sub.prototype = Vehicle.prototype;
     Sub.prototype.constructor=Sub 
-     
+    Sub.prototype.sound = function () 
+    {
+      document.getElementById("output").innerHTML+="The Sub goes Navy Navy hooah<br>";
+    }
    </script>
   </head>
     <body onload="T()">
