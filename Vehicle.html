@@ -7,7 +7,7 @@
 }  
      Vehicle.prototype.go = function ()
 {
-  document.getElementById("output").innerHTML+="The "+this.Name+" go.<br>";
+  document.getElementById("output").innerHTML+="The "+this.Name+" goes.<br>";
 }
 
 Vehicle.prototype.sound = function ()
@@ -20,13 +20,22 @@ Vehicle.prototype.sound = function ()
        ship = new Vehicle();
        ship.go();
       }
+   function S()
+      {
+       sub = new Sub();
+       sub.go();
+      }
+      function Sub()
+      { this.Name="sub";
+      } 
+    
      
    </script>
   </head>
     <body onload="T()">
      <p id="output"></p>
     
-      <button onclick="output()">Click it</button>
+      <button onclick="S()">Click it</button>
 
  
   </body>
