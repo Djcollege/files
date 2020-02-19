@@ -24,9 +24,9 @@ Vehicle.prototype.sound = function ()
       function Ship()
       { this.Name="ship";
       }
-      ship.prototype = Object.create(Vehicle.prototype);
-      ship.prototype.constructor=ship
-      ship.prototype.sound = function ()
+      Ship.prototype = Object.create(Vehicle.prototype);
+      Ship.prototype.constructor=ship
+      Ship.prototype.sound = function ()
       {
         document.getElementById("output").innerHTML+="The Ship goes sppppppmpmpmmpmpm splish splash<br>";
       }
