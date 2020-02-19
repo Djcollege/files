@@ -21,6 +21,15 @@ Vehicle.prototype.sound = function ()
        ship.go();
        ship.sound();
       }
+      function Ship()
+      { this.Name="ship";
+      }
+      ship.prototype = Object.create(Vehicle.prototype);
+      ship.prototype.constructor=ship
+      ship.prototype.sound = function ()
+      {
+        document.getElementById("output").innerHTML+="The Ship goes sppppppmpmpmmpmpm splish splash<br>";
+      }
    function S()
       {
        sub = new Sub();
@@ -36,6 +45,36 @@ Vehicle.prototype.sound = function ()
     {
       document.getElementById("output").innerHTML+="The Sub goes Navy Navy hooah<br>";
     }
+   function J() 
+      {
+       jeep = new Jeep();
+       jeep.go();
+       jeep.sound();
+      }
+      function Jeep()
+      { this.Name="jeep";
+      }
+      Jeep.prototype = Object.create(Vehicle.prototype);
+      Jeep.prototype.constructor=Jeep
+      Jeep.prototype.sound = function ()
+      {
+        document.getElementById("output").innerHTML+="The Jeep goes meep meep<br>";
+      }
+      function P()
+      {
+       plane = new Plane();
+       plane.go();
+       plane.sound();
+      }
+      function Plane()
+      { this.Name="plane";
+      }
+      Plane.prototype = Object.create(Vehicle.prototype);
+      Plane.prototype.constructor=Plane
+      Plane.prototype.sound = function ()
+      {
+        document.getElementById("output").innerHTML+="The Plane goes feeeeeeeeooooooommmmmmmmmm<br>";
+      }
    </script>
   </head>
     <body onload="T()">
