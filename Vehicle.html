@@ -28,8 +28,8 @@ Vehicle.prototype.sound = function ()
       function Sub()
       { this.Name="sub";
       } 
-    Vehicle.prototype = Sub.prototype;
- 
+    Sub.prototype = Vehicle.prototype;
+    Sub.prototype.constructor=Sub 
      
    </script>
   </head>
