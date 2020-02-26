@@ -94,11 +94,11 @@
       function addHero()
       {
         hero = goldFieldgame.AddHero();
-                goldFieldgame.PlaySound("Speech");
-        document.getElementById("output").innerHTML=hero.myID+" "+hero.GetPosition()
+                goldFieldgame.PlaySound("Speech");     
         var position=hero.GetPosition()
-        goldFieldgame.LookAt(position[0],position[1])
+
         var location= goldFieldgame.LookAt(position[0],position[1])
+          document.getElementById("output").innerHTML=hero.myID + " " + position + " " +location
       }
 
       function killHero()
