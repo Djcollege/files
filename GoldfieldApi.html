@@ -83,12 +83,19 @@
            }
         }
       }
-
+//Use one of the member functions to create a move on the GoldField.
+//Save the Mover you created to a variable. Use the variable to do other things to that Mover.
+//Write the ID of the Mover on the screen in some way.
+//Write the position of the Mover on the screen.
+//LookAt that location to verify that the Mover is there. Write what the LookAt function returns to the screen.
+//Use SetPosition to alter the position of the Mover. Write out the new position again.
+//Use the Destroy method. Hopefully one that makes some noise.
       var hero = null;
       function addHero()
       {
         hero = goldFieldgame.AddHero();
                 goldFieldgame.PlaySound("Speech");
+        document.getElementById("output").innerHTML=hero.myID
       }
 
       function killHero()
@@ -104,6 +111,7 @@
 
      
     </script>
+    
   </head>
   <body onload="planes()">
     <div id="field"></div>
