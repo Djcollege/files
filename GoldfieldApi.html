@@ -96,6 +96,9 @@
         hero = goldFieldgame.AddHero();
                 goldFieldgame.PlaySound("Speech");
         document.getElementById("output").innerHTML=hero.myID+" "+hero.GetPosition()
+        var position=hero.GetPosition()
+        goldFieldgame.LookAt(position[0],position[1])
+        var location= goldFieldgame.LookAt(position[0],position[1])
       }
 
       function killHero()
@@ -108,7 +111,7 @@
         goldFieldgame.Reset();
         goldFieldgame.RandomFill(.05);
       }
-
+  
      
     </script>
     
