@@ -2,7 +2,9 @@
  <head>
  </head>
    <title> MoverControl </title>
+     <script src="https://bsdillon.github.io/cs200_Spring2020/GoldField/goldfield.js"></script>
     <script>
+    
     </script>
     <body>
    </body>
