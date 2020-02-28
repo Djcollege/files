@@ -4,6 +4,10 @@
    <title> MoverControl </title>
      <script src="https://bsdillon.github.io/cs200_Spring2020/GoldField/goldfield.js"></script>
     <script>
+    var goldfield
+    var a
+    var b
+    var c
     
     </script>
     <body>
