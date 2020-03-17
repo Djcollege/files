@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script>
+function startTime() {
+  var today = new Date();
+  
+  var H = today.getHours();
+  
+  var M = today.getMinutes();
+  
+  var M = today.getSeconds();
+  M = MTime(M);
+  
+  s = STime(s);
+  
+  document.getElementById('display').innerHTML =
+  H + ":" + M + ":" + S;
+  var T = setTimeout(startTime, 500);
+}
+    function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+  </script>
+ </head>
+
+<body onload="startTime()">
+
+<div id="display"></div>
+
+</body>
+</html>
