@@ -2,18 +2,19 @@
   <head>
     <style>
     </style>
+    <body>
+    <button onclick="tapme()">Click me</button>
+    <p id="output"></p>
+    </body>
     <script>
       var count=0;
       var no =10000000;
-      function tapMe()
+      function tapme()
       {
         if count < no
         count++;
         document.getElementById("output").innerHTML="There have been" + count + "button pushes";
       }
     </script>
-  <body>
-    <button onclick="tapMe()">Click me</button>
-    <p id="output"></p>
-    </body>
+
 </html>
