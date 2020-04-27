@@ -23,23 +23,23 @@
       GoldField.prototype.AddSmiley = function()
       {
          var id = this.CreateMoverTag();
-         var udt = new Smiley(id);
+         var udt = new Rock(id);
          this.AddGenericMover(udt);
          return udt;
       }
 
-      var Smiley = function(id)
+      var Rock = function(id)
       {
-         this.Description = "Smiley";
-         this.imageURL = randomSmiley();
+         this.Description = "Rock";
+         this.imageURL = "https://bsdillon.github.io/cs200_Spring2020/GoldField/boulder.png";
          this.destroyURL = "Empty.png";
          this.destroyAudio = "empty";
          this.destroyTime = 10;
          this.InitTag(id);
       }
 
-      Smiley.prototype = Object.create(Mover.prototype);
-      Smiley.prototype.constructor = Smiley;
+      Rock.prototype = Object.create(Mover.prototype);
+      Rock.prototype.constructor = Rock;
       //-------------------------------------------
       //  End - Elements required to create a Smiley
       //-------------------------------------------
