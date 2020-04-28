@@ -92,5 +92,5 @@ function UpdateSmileys()
 var allSmileys = [];
 function CreateRock()
 {
-  allSmileys.push(goldField.AddSmiley());
+  allSmileys.push(GoldField.AddSmiley());
 }
