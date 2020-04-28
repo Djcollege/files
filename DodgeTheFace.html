@@ -9,6 +9,21 @@
     <script>
       var goldField;
       var lastSmiley;
+      
+              function planes()
+      {
+        goldFieldgame = new GoldField(document.getElementById("field"),30, 20, 15);
+        
+        goldFieldgame.RandomFill(.05);
+        
+        goldFieldgame.SetClickListener(Click);
+        
+        goldFieldgame.SetKeyListener(Keyboard);
+        
+        goldFieldgame.AddSound("https://Djcollege.github.io/files/Erza.mp3","Speech");
+        
+
+      }
 
       function init()
       {
