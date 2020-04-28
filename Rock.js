@@ -90,7 +90,7 @@ function UpdateSmileys()
 }
 
 var allSmileys = [];
-function CreateSmiley()
+function CreateRock()
 {
   allSmileys.push(goldField.AddSmiley());
 }
