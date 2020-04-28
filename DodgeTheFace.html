@@ -151,9 +151,23 @@
       StartTimer();
     </script>
   </head>
-  <body onload="init()">
+    <body onload="planes()">
     <div id="field"></div>
+    <button onclick="addHero()">Add Hero</button>
+    
+    <button onclick="killHero()">Kill Hero</button>
+   
+
+    <button onclick="resetplanes()">Resetplanes</button>
+    
+      <p id="output"></p>
+  
+      <body onload="init()">
+    
+        <div id="field"></div>
+        
     <button onclick="CreateSmiley()">Add</button>
+        
     <p id="output"></p>
   </body>
 </html>
