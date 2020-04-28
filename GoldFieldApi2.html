@@ -22,6 +22,27 @@
         
 
       }
+       GoldField.prototype.AddRock = function()
+      {
+         var id = this.CreateMoverTag();
+         var udt = new Rock(id);
+         this.AddGenericMover(udt);
+         return udt;
+      }
+       var Rock = function(id)
+      {
+         this.Description = "Rock";
+         this.imageURL = "Rock.png"();
+         this.destroyURL = "Empty.png";
+         this.destroyAudio = "empty";
+         this.destroyTime = 10;
+         this.InitTag(id);
+      }
+        Rock.prototype = Object.create(Mover.prototype);
+        Rock.prototype.constructor = Rock;
+       
+        StartTimer();
+
       
 
       function Click(event)
@@ -123,6 +144,8 @@
     <button onclick="addHero()">Add Hero</button>
     
     <button onclick="killHero()">Kill Hero</button>
+    
+      <button onclick="CreateRock()">Make the game harder?(Adds more rocks)</button>
    
 
     <button onclick="resetplanes()">Resetplanes</button>
