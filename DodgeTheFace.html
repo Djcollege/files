@@ -6,6 +6,7 @@
     </style>
     <script src="https://bsdillon.github.io/cs200_Spring2020/GoldField/goldfield.js"></script>
     <script src="https://bsdillon.github.io/cs200_Spring2020/Instances/smiley.js"></script>
+    // These libraries both belong to Professor Dillon.
     <script>
       var goldField;
       var lastSmiley;
@@ -72,13 +73,7 @@
            }
         }
       }
-//Use one of the member functions to create a move on the GoldField.
-//Save the Mover you created to a variable. Use the variable to do other things to that Mover.
-//Write the ID of the Mover on the screen in some way.
-//Write the position of the Mover on the screen.
-//LookAt that location to verify that the Mover is there. Write what the LookAt function returns to the screen.
-//Use SetPosition to alter the position of the Mover. Write out the new position again.
-//Use the Destroy method. Hopefully one that makes some noise.
+
       var hero = null;
       function addHero()
       {
@@ -114,9 +109,6 @@
         goldFieldgame.AddSound("https://Djcollege.github.io/files/Erza.mp3","Speech");
       }
 
-      //-------------------------------------------
-      //  Elements required to create a Smiley
-      //-------------------------------------------
       GoldField.prototype.AddSmiley = function()
       {
          var id = this.CreateMoverTag();
@@ -137,9 +129,6 @@
 
       Smiley.prototype = Object.create(Mover.prototype);
       Smiley.prototype.constructor = Smiley;
-      //-------------------------------------------
-      //  End - Elements required to create a Smiley
-      //-------------------------------------------
 
       StartTimer();
     </script>
